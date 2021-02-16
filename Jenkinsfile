@@ -17,7 +17,7 @@ stage ('test')
 {
 steps 
 {
-sh 'mvn test install'
+ sh 'mvn -f HelloWorld/pom.xml test install'
 }
 
 }
