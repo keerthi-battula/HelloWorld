@@ -10,7 +10,7 @@ stages {
 stage ('bulid')
 {
 steps {
-sh 'mvn -B -DskipTests clean'
+sh 'mvn -f HelloWorld/pom.xml clean'
 }
 }
 stage ('test')
