@@ -7,14 +7,14 @@ stages {
 stage ('bulid')
 {
 steps {
-bat 'mvn -B -DskipTests clean'
+sh 'mvn -B -DskipTests clean'
 }
 }
 stage ('test')
 {
 steps 
 {
-bat 'mvn test install'
+sh 'mvn test install'
 }
 
 }
